@@ -6,32 +6,56 @@ A Product Landing page for a fictional product of Spirit Plants
 Designed and Coded by Mary Ronan
 
 Project log:
-1. Gather Content - current stage
+1. Gather Content (text, images and video)
+2. Refine Content - In progress
 
 
 Content:
 
-Header will include introductory image with 4 point navigation menu.
+Header will include introductory image with navigation menu.
 
 Nav items:
-1 - Who we are
-2 - What we do
-3 - Why we do it
-4 - How we do it
+1 - Who...we are
+2 - What...we do
+3 - Why...we do it
+4 - How...we do it
+5 - Which...spirit plant is for you
+6 - When...do you want it
 
-Who
 
-Description of Spirit Plants Mission and flow chart to find your Spirit Plant
+Who...we are?
 
-What
+Introduce the creators of this product
 
-Image gallery of Spirit Plant products for purchase
+What...we do?
 
-Why
+Description of product and email sign-up form
 
-Mission statement with video
+Why...we do it?
 
-How
+Mission statement and reviews section
 
-Further information on Products such as growing environment, etc.
+How...we do it?
+
+Description of the lifecycle of the product with video
+
+Which...spirit plant is for you?
+
+A flowchart diagram to discover which plant is for you with image gallery of plant products.
+
+Spirit plant products:
+Cactus
+Ivy
+Sunflower
+Shamrock
+Poppy
+Daisy
+Foxglove
+Rose
+Lavender
+
+When...do you want it
+
+Special offers section and gateway to shopping land and parting with your hard-earned cash
+
 
