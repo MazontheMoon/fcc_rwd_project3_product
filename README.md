@@ -8,6 +8,7 @@ Designed and Coded by Mary Ronan
 Project log:
 1. Gather Content (text, images and video)
 2. Refine Content - In progress
+3. Design responsive layout 
 
 
 Content:
