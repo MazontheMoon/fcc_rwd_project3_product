@@ -1,6 +1,9 @@
 /*========================
 Declare variables for page
 =========================*/
+:root {
+
+}
 
 /*=====================
 Basic Styles and Layout
@@ -18,3 +21,27 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
+/*Layout*/
+
+
+/*=====================
+Header and Nav Bar
+======================*/
+
+header, header figure {
+  margin: 0;
+  padding: 0;
+}
+
+#header-img {
+  width: 100%;
+}
+
+/*=====================
+Section styling
+======================*/
+
+/*=====================
+Footer
+======================*/
