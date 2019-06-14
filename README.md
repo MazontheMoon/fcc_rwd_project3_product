@@ -20,7 +20,7 @@ Nav items:
 1 - Who...we are
 2 - What...we do
 3 - Why...we do it
-4 - How...we do it
+    4 - How...we do it - REMOVE
 5 - Which...spirit plant is for you
 6 - When...do you want it
 
@@ -37,9 +37,9 @@ Why...we do it?
 
 Mission statement and reviews section
 
-How...we do it?
+    How...we do it? - REMOVE
 
-Description of the lifecycle of the product with video
+    Description of the lifecycle of the product with video
 
 Which...spirit plant is for you?
 
