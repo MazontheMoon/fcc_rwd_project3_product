@@ -14,6 +14,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -22,21 +23,31 @@ body {
   -moz-box-sizing: border-box;
 }
 
-/*Layout*/
-
+/*In dreaded case of image not found*/
+img:after {
+display: inherit;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 5px;
+border: 1px dashed grey;
+background-color: white;
+z-index: 1;
+font-family: verdana;
+font-size: 0.8em;
+content: "" attr(alt) " was not found";
+}
 
 /*=====================
 Header and Nav Bar
 ======================*/
 
-header, header figure {
-  margin: 0;
-  padding: 0;
-}
+/*background image for header*/
 
-#header-img {
-  width: 100%;
-}
+/*h1 text to be curved like a comet tail across the background image*/
+
+/*nav menu*/
 
 /*=====================
 Section styling
@@ -45,3 +56,9 @@ Section styling
 /*=====================
 Footer
 ======================*/
+
+/*=====================
+Media Queries 
+======================*/
+
+/*no video autoplay for mobile devices*/
