@@ -14,7 +14,7 @@ Project log:
 
 Content:
 
-Header will include introductory image with navigation menu.
+Header will include background image with logo, title and navigation menu.
 
 Nav items:
 1 - About

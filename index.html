@@ -16,19 +16,19 @@
 <main>
   <header id="header">
     <img id="header-img" src="logo.png" alt="Company logo" title="Out of this World gifts">
-    <h1>Out of this World Gifts</h1>
+    <h1>An Out of this World gift</h1>
     <nav id="nav-bar">
       <ul>
-        <li class="nav-link"><a href="#about_link">About</a></li>
-        <li class="nav-link"><a href="#order_link">Order</a></li>
-        <li class="nav-link"><a href="#contact_link">Contact</a></li>
+        <li><a class="nav-link" href="#about_link">About</a></li>
+        <li><a class="nav-link" href="#order_link">Order</a></li>
+        <li><a class="nav-link" href="#contact_link">Contact</a></li>
       </ul>
     </nav>
   </header>
   <section id="about_link">
     <p>Show that important person in your life that they are the centre of your universe by getting them their very own star (even if that person is yourself...)</p>
     <figure class="videobox">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/ofmi03d1U0s?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ofmi03d1U0s?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </figure>
   </section>
   <section id="order_link">
@@ -53,9 +53,9 @@
   </section>
   <section id="contact_link">
     <p>Feel free to drop us <a href="mailto:fakeemail@fakeoutofthisworld.fake">an email</a> or join the galactic family and hear about exclusive offers of any unclaimed moons in neighbouring galaxies as they are discovered</p>
-    <form action="" method="post" id="form">
-      <input type="email" id="email" placeholder="email@email.com">
-      <input type="submit" value="Join the galactic family">
+    <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+      <input type="email" id="email" name="email" placeholder="email@email.com">
+      <input type="submit" id="submit" value="Join the galactic family">
       <p class="fineprint">Spam spam spam</p>
     </form>
   </section>
