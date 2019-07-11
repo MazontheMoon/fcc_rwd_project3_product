@@ -36,7 +36,7 @@ background-color: white;
 z-index: 1;
 font-family: verdana;
 font-size: 0.8em;
-content: "" attr(alt) " was not found";
+content: "" attr(alt) " image was not found";
 }
 
 /*=====================
@@ -45,9 +45,8 @@ Header and Nav Bar
 
 /*background image for header*/
 #header {
-  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  background-image: url("https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/leafy-header.png?raw=true"");
 }
-/*h1 text to be curved like a comet tail across the background image*/
 
 /*nav menu - always at top of screen*/
 .nav-bar {

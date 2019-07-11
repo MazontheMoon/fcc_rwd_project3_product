@@ -1,7 +1,7 @@
 # fcc_rwd_project3_product
 Project 3 of 5 for FreeCodeCamp Responsive Web Design Certification
 
-A Product Landing page for a fictional company selling galactic properties
+A Product Landing page for a fictional company selling Spirit Plants
 
 Designed and Coded by Mary Ronan
 
@@ -17,29 +17,29 @@ Content:
 Header will include background image with logo, title and navigation menu.
 
 Nav items:
-1 - About
-2 - Order
-3 - Contact
+1 - Who
+2 - What
+3 - Why
+4 - How
+5 - When
+6 - Where
 
-
-About
-
-Description of products:
-
-Show that important person in your life that they are the centre of your universe by getting them their very own star (even if that person is yourself...)
-
-Order
 
 List of Products:
 
-Star (shooting star)
-Nebula
-Galaxy
-Moon
-Red Moon
+Cactus
+Daisy
+Foxglove
+Ivy
+Lavendar
+Poppy
+Rose
+Shamrock
+Sunflower
+
 
 Contact
 
-Link to send an email or simple sign up form for mailing list
+Link to send an email and simple sign up form for mailing list
 
 
