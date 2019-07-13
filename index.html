@@ -16,10 +16,10 @@
 <main>
   <!--header with sticky nav bar at top of screen includes icon and page title with backkground image-->
   <header id="header">
-    <img id="header-img" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/logo.png?raw=true" alt="Company logo" title="Spirit Plants Logo">
+      <img id="header-img" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/logo.png?raw=true" alt="Company logo" title="Spirit Plants Logo">
     <h1>You and your Spirit Plant</h1>
     <nav id="nav-bar">
-      <ul>
+      <ul class="nav-bar">
         <li><a class="nav-link" href="#who_link">Who</a></li>
         <li><a class="nav-link" href="#what_link">What</a></li>
         <li><a class="nav-link" href="#why_link">Why</a></li>
@@ -40,7 +40,7 @@
   </section>
   <!--Shopping cart section with list of all products-->
   <section id="what_link">
-    <h3>What Spirit Plant is right for you?</h3>
+    <h3>What Spirit Plant is the perfect fit for you?</h3>
     <ul class="productlist">
       <li class="productbox">
         <i class="fas fa-shopping-cart"></i>
@@ -64,35 +64,43 @@
     <h3>Why do we do this?</h3>
     <p>Everyone deserves a special plant buddy but why not let our customers speak for themselves…</p>
     <ul class="reviewlist">
-        <li class="reviewbox"></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li class="reviewbox">
+        <p>I love my spirit Ivy plant! It is hanging in the bathroom and I sing to it every morning when I shower.</p></li>
+        <li>
+            <p>I’m a terrible gardener but found the care guide for my spirit plant so easy to follow that two years later my Rose is still thriving and looking great.</p>
+        </li>
+        <li>
+        <p>Our son was being bullied at school and found it hard to talk about it so we got him a Spirit Cactus and he tells all his troubles to it and is dealing much better now.</p>
+        </li>
+        <li>
+        <p>I tell it all about my day when I get home and unlike my cat it doesn’t judge me!!</p>
+        </li>
     </ul>
     <figure class="videobox">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/xW_AsV7k42o?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/xW_AsV7k42o?start=3" frameborder="0" allow="accelerometer; autoplay; muted; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </figure>
   </section> 
   <!--signup form section-->
   <section id="how_link">
     <h3>How do we do we do to get such great looking healthy plants?</h3>
-    <p>Sign up here to learn more about the lifecycle of your plant and our reuse and recycle gardening philosophy as well as lots of other tips from our experts</p>
+    <p>Join up to learn more about the lifecycle of your plant and our reuse and recycle gardening philosophy as well as lots of other tips from our experts</p>
     <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
       <input type="email" id="email" name="email" placeholder="email@email.com">
       <input type="submit" id="submit" value="Join">
+      <input type="hidden" id="timestamp" name="timestamp" value="July 2019">
         <p class="fineprint">No spam</p>
     </form>
     </section>
     <!--info section for when these products can be purchased-->
-    <section id="when_link">
+    <aside id="when_link">
         <h3>When can I get my Spirit Plant?</h3>
         <p>Anytime. We do closely observe the growing cycles of nature but thanks to our acres of greenhouses (did we mention all our greens houses are made from plastic recycled from our oceans?) we can deliver your Spirit Plant friends to you year round.</p>
-    </section>
+    </aside>
     <!--regions where the product can be purchased-->
-    <section id="where_link">
+    <aside id="where_link">
         <h3>Where can we deliver your new plant friend?</h3>
         <p>Everywhere on Earth (Deliveries to space stations or a galaxy far far away are not yet possible)!</p>
-    </section>
+    </aside>
 </main>
 <footer>
   <!--contact details-->
