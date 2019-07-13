@@ -29,7 +29,6 @@ display: inherit;
 position: absolute;
 top: 0;
 left: 0;
-width: 100%;
 padding: 5px;
 border: 1px dashed grey;
 background-color: white;
@@ -39,20 +38,47 @@ font-size: 0.8em;
 content: "" attr(alt) " image was not found";
 }
 
+/*remove default list styling*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+
 /*=====================
 Header and Nav Bar
 ======================*/
 
 /*background image for header*/
 #header {
-  background-image: url("https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/leafy-header.png?raw=true"");
+  height: 25vh;
+  background-image: url("https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/leafy-header.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*nav menu - always at top of screen*/
 .nav-bar {
   display: flex;
+  flex-flow: row nowrap;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
+h1 {
+    color: white;
+    font-family: 'Kaushan Script', Georgia, serif;
+    font-size: 4rem;
+    text-align: center;
+}
 /*=====================
 Section styling
 ======================*/
@@ -61,11 +87,17 @@ Section styling
 Footer
 ======================*/
 
+footer {
+    background-color: black;
+    color: white;
+}
+
 /*=============================
 Media Queries - Responsiveness
 ==============================*/
 
 /*no video autoplay for mobile devices*/
+
 
 /*=====================
 Media Queries - Print
