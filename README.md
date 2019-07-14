@@ -10,6 +10,7 @@ Project log:
 2. Refine Content
 3. Design responsive layout 
 4. Build skeleton of page with content
+5. Add page styles - Current Phase
 
 
 Content:
@@ -36,6 +37,8 @@ Poppy
 Rose
 Shamrock
 Sunflower
+
+Each Product listing will include image, name, description and add to basket button
 
 
 Contact

@@ -13,7 +13,7 @@ Basic Styles and Layout
 body {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -23,19 +23,53 @@ body {
   -moz-box-sizing: border-box;
 }
 
+/*my default fonts*/
+
+h1 {
+    color: white;
+    font-family: 'Dancing Script', Georgia, serif;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+h3 {
+    font-family: Fondamento, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: Fondamento, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+
+p{
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+a {
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
 /*In the dreaded case of image not found*/
 img:after {
 display: inherit;
 position: absolute;
 top: 0;
 left: 0;
-padding: 5px;
+padding: 2px;
 border: 1px dashed grey;
 background-color: white;
 z-index: 1;
-font-family: verdana;
-font-size: 0.8em;
-content: "" attr(alt) " image was not found";
+font-family: Verdana;
+font-size: 0.6em;
+content: "" attr(alt) " not found";
 }
 
 /*remove default list styling*/
@@ -50,7 +84,6 @@ li {
   margin: 0;
 }
 
-
 /*=====================
 Header and Nav Bar
 ======================*/
@@ -64,6 +97,7 @@ Header and Nav Bar
   background-position: center;
 }
 
+
 /*nav menu - always at top of screen*/
 .nav-bar {
   display: flex;
@@ -73,15 +107,14 @@ Header and Nav Bar
   right: 0;
 }
 
-h1 {
-    color: white;
-    font-family: 'Kaushan Script', Georgia, serif;
-    font-size: 4rem;
-    text-align: center;
+.nav-link {
+    
 }
+
 /*=====================
 Section styling
 ======================*/
+
 
 /*=====================
 Footer
@@ -90,6 +123,12 @@ Footer
 footer {
     background-color: black;
     color: white;
+}
+
+author {
+    font-family: Verdana, sans-serif;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
 }
 
 /*=============================
