@@ -2,14 +2,18 @@
 Declare variables for page
 =========================*/
 :root {
-
+    --navbar: #08480c; /*green*/
+    --border: #685634; /*brown*/
+    --text: #e9f1f7; /*offwhite*/
+    --header: #a5b5bf; /*bluegrey*/
+    --pageBG: #ffffff; /*snow*/
 }
 
 /*=====================
 Basic Styles and Layout
 ======================*/
 
-/*Global styles*/
+/*set global styles*/
 body {
   margin: 0;
   padding: 0;
@@ -17,25 +21,34 @@ body {
   scroll-behavior: smooth;
 }
 
-* {
+body * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
+section, aside {
+    margin: 0;
+    padding: 0;
+}
 /*my default fonts*/
 
 h1 {
-    color: white;
+    color: var(--pageBG, white);
     font-family: 'Dancing Script', Georgia, serif;
     font-size: 4rem;
     text-align: center;
     text-shadow: 2px 2px 3px black;
+    height: 20vh;
+    line-height: 20vh;
 }
 
 h3 {
     font-family: Fondamento, Verdana, sans-serif;
     font-size: 2rem;
+    line-height: 2.2rem;
+    margin: 0;
+    padding: 0;
 }
 
 h4 {
@@ -46,14 +59,14 @@ h4 {
 p{
     font-family: Verdana, sans-serif;
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.3rem;
 }
 
 a {
     font-family: Verdana, sans-serif;
     font-size: 1rem;
     line-height: 1rem;
-    color: white;
+    color: var(--text, white);
     text-decoration: none;
 }
 
@@ -63,13 +76,13 @@ display: inherit;
 position: absolute;
 top: 0;
 left: 0;
-padding: 2px;
+padding: 2.px;
 border: 1px dashed grey;
 background-color: white;
 z-index: 1;
 font-family: Verdana;
-font-size: 0.6em;
-content: "" attr(alt) " not found";
+font-size: 0.8em;
+content: "uh oh! No " attr(alt) "";
 }
 
 /*remove default list styling*/
@@ -95,22 +108,43 @@ Header and Nav Bar
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-
-/*nav menu - always at top of screen*/
-.nav-bar {
-  display: flex;
-  flex-flow: row nowrap;
-  position: fixed;
-  top: 0;
+  position: relative;
+  top: -3vh;
+  left: 0;
   right: 0;
 }
 
-.nav-link {
-    
+
+/*nav menu - always at top right of screen*/
+.nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3vh;
+  background-color: var(--navbar);
 }
 
+/*logo - always in top left corner*/
+.logo {
+    flex: 1 50px;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+/*nav buttons*/
+.nav-link {
+    margin: auto 10px;
+    flex: 0 1 25px;
+}
+
+/*placeholder for shopping basket functionality*/
+.checkout-float {
+    
+}
 /*=====================
 Section styling
 ======================*/
