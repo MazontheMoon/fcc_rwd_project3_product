@@ -37,10 +37,9 @@ h1 {
     color: var(--pageBG, white);
     font-family: 'Dancing Script', Georgia, serif;
     font-size: 4rem;
-    text-align: center;
     text-shadow: 2px 2px 3px black;
-    height: 20vh;
-    line-height: 20vh;
+    text-align: center;
+
 }
 
 h3 {
@@ -82,19 +81,20 @@ background-color: white;
 z-index: 1;
 font-family: Verdana;
 font-size: 0.8em;
-content: "uh oh! No " attr(alt) "";
+content: "uh oh! No " attr(title) "";
 }
 
-/*remove default list styling*/
+/*remove default list and figure styling*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+li, figure {
   padding: 0;
   margin: 0;
+  border: 0;
 }
 
 /*=====================
@@ -108,10 +108,11 @@ Header and Nav Bar
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-  top: -3vh;
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 
@@ -148,6 +149,38 @@ Header and Nav Bar
 /*=====================
 Section styling
 ======================*/
+
+section, aside {
+    border: solid 1px green;
+    margin: 0 20vw;
+}
+
+/*Who section - description of who creates the fictional Spirit Plant product*/
+
+/*What section - listing of products with images, title, description and dummy shop button*/
+
+/*plant headshots*/
+.plantheadshot {
+    width: 15vw;
+}
+
+.plantheadshot:hover{
+    width: 30vw;
+}
+
+/*Why section - review spots and video spot*/
+
+/*Video*/
+
+.video {
+
+}
+
+/* How section - signup form*/
+
+/*When section - only for monitorviews*/
+
+/*Where section - only for monitor views*/
 
 
 /*=====================
