@@ -9,8 +9,9 @@ Project log:
 1. Gather Content (text, images and video)
 2. Refine Content
 3. Design responsive layout 
-4. Build skeleton of page with content
-5. Add page styles - Current Phase
+4. Build skeleton of page
+5. Add initial page styles - Current Phase
+6. Replace placeholder content with final draft of written content and images for gallery
 
 
 Content:
@@ -22,8 +23,8 @@ Nav items:
 2 - What
 3 - Why
 4 - How
-5 - When
-6 - Where
+5 - When *not shown in mobile views
+6 - Where * not shown in mobile views
 
 
 List of Products:
