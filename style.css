@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
 
 body * {
@@ -39,7 +39,10 @@ h1 {
     font-size: 4rem;
     text-shadow: 2px 2px 3px black;
     text-align: center;
-
+    padding: 0;
+    margin: 0;
+    height: 25vh;
+    line-height: 25vh;
 }
 
 h3 {
@@ -100,15 +103,18 @@ li, figure {
 /*=====================
 Header and Nav Bar
 ======================*/
+main {
+    position: relative;
+}
 
 /*background image for header*/
-#header {
+header {
   height: 25vh;
   background-image: url("https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/leafy-header.jpg?raw=true");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
+  position:relative;
   top: 0;
   left: 0;
   right: 0;
@@ -144,6 +150,15 @@ Header and Nav Bar
 
 /*placeholder for shopping basket functionality*/
 .checkout-float {
+    z-index: 5;
+    position: fixed;
+    right: 2px;;
+    top: 3.5vh;
+    color: var(--text, white);
+    padding: 7px;
+    border: solid 1px black;
+    border-radius: 50%;
+    background-color: var(--navbar, darkgreen);
     
 }
 /*=====================
