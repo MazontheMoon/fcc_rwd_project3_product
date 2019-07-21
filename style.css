@@ -49,8 +49,7 @@ h3 {
     font-family: Fondamento, Verdana, sans-serif;
     font-size: 2rem;
     line-height: 2.2rem;
-    margin: 0;
-    padding: 0;
+
 }
 
 h4 {
@@ -78,7 +77,7 @@ display: inherit;
 position: absolute;
 top: 0;
 left: 0;
-padding: 2.px;
+padding: 2px;
 border: 1px dashed grey;
 background-color: white;
 z-index: 1;
@@ -131,7 +130,6 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  height: 3vh;
   background-color: var(--navbar);
 }
 
@@ -146,17 +144,18 @@ header {
 .nav-link {
     margin: auto 10px;
     flex: 0 1 25px;
+    outline: none;
 }
 
 /*placeholder for shopping basket functionality*/
 .checkout-float {
     z-index: 5;
     position: fixed;
-    right: 2px;;
-    top: 3.5vh;
+    right: 0.5rem;;
+    top: 1.5rem;
     color: var(--text, white);
     padding: 7px;
-    border: solid 1px black;
+    border: solid 2px black;
     border-radius: 50%;
     background-color: var(--navbar, darkgreen);
     
@@ -166,10 +165,12 @@ Section styling
 ======================*/
 
 section, aside {
-    border: solid 1px green;
-    margin: 0 20vw;
+    margin: 15px 20vw;
 }
 
+section h3 {
+    background-color: var(--navbar, darkgreen);
+}
 /*Who section - description of who creates the fictional Spirit Plant product*/
 
 /*What section - listing of products with images, title, description and dummy shop button*/
