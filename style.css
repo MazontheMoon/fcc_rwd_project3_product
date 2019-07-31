@@ -5,7 +5,7 @@ Declare variables for page
     
     /*colours*/
     --navbar: #08480c; /*green*/
-    --border: #685634; /*brown*/
+    --footer: #685634; /*brown*/
     --text: #e9f1f7; /*offwhite*/
     --header: #a5b5bf; /*bluegrey*/
     --pageBG: #ffffff; /*snow*/
@@ -23,12 +23,11 @@ body {
   scroll-behavior: smooth;
 }
 
-body * {
+* {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
 
 /*remove default list and figure styling*/
 ul {
@@ -54,7 +53,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
+  position: relative;
   top: 0 ;
   left: 0;
   right: 0;
@@ -70,7 +69,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  background-color: var(--navbar);
+  background-color: var(--navbar, darkgreen);
   z-index: 100;
 }
 
@@ -99,44 +98,27 @@ header {
     padding: 5px;
 }
 
-.header-box {
-    position: relative;
-    width: 25vw;
-    height: 25vw;
-    border: solid 2.5px white;
-    background-image: linear-gradient(to bottom right, green, white, transparant);
-    background-color: white;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /*default fonts styling*/
 
 h1 {
-    color: var(--navbar, white);
+    color: var(--text, white);
     font-family: Lobster, Georgia, serif;
     font-size: 3rem;
+    line-height: 4rem;
     text-shadow: 2px 2px 3px black;
 }
 
-h1:before{
-    
-    width: 25vw;
-    height: 25vw;
-    border: solid 2px white;
-    border-radius: 100%;
-}
 
 h3 {
     font-family: Lobster, Verdana, sans-serif;
     font-size: 2rem;
-    line-height: 2.2rem;
+    line-height: 2.5rem;
 }
 
 h4 {
     font-family: Fondamento, Verdana, sans-serif;
     font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 p, li{
@@ -148,7 +130,7 @@ p, li{
 a {
     font-family: Verdana, sans-serif;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
     color: var(--text, white);
     text-decoration: none;
 }
@@ -156,23 +138,14 @@ a {
 /*=====================
 Section styling
 ======================*/
-main {
-    position: relative;
-    top: 33vh;
-}
 
-
-figure{
-    position: relative;
-}
 
 /*=====================
 Footer
 ======================*/
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: var(--footer, black);
 }
 
 /*=====================
@@ -213,6 +186,8 @@ content: "uh oh! No " attr(title) "";
 Media Queries - Responsiveness
 ==============================*/
 
+
+/*turn off animations based on browser setting*/
 
 
 /*=====================
