@@ -5,7 +5,7 @@ Declare variables for page
     
     /*colours*/
     --navbar: #08480c; /*green*/
-    --footer: #08480c; /*green*/
+    --border: #685634; /*brown*/
     --text: #e9f1f7; /*offwhite*/
     --header: #a5b5bf; /*bluegrey*/
     --pageBG: #ffffff; /*snow*/
@@ -23,11 +23,12 @@ body {
   scroll-behavior: smooth;
 }
 
-* {
+body * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
 
 /*remove default list and figure styling*/
 ul {
@@ -47,17 +48,24 @@ Header and Nav Bar
 ======================*/
 
 /*background image for header*/
-header {
+h1 {
   height: 33vh;
+  margin-top: 0;
   background-image: url("https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/leafy-header.jpg?raw=true");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  background-clip: border-box;
+  position: absolute;
   top: 0 ;
   left: 0;
   right: 0;
   z-index: -1;
+  border-bottom: 0.5rem solid black;
+  color: var(--navbar, white);
+  font-family: Lobster, Georgia, serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 3px black;
 }
 
 /*nav menu - always at top right of screen*/
@@ -69,7 +77,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  background-color: var(--navbar, darkgreen);
+  background-color: var(--navbar);
   z-index: 100;
 }
 
@@ -98,27 +106,22 @@ header {
     padding: 5px;
 }
 
-/*default fonts styling*/
 
-h1 {
-    color: var(--text, white);
-    font-family: Lobster, Georgia, serif;
-    font-size: 3rem;
-    line-height: 4rem;
-    text-shadow: 2px 2px 3px black;
-}
+/*fonts styling*/
 
+/*=====================
+Section styling
+======================*/
 
 h3 {
     font-family: Lobster, Verdana, sans-serif;
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
 }
 
 h4 {
     font-family: Fondamento, Verdana, sans-serif;
     font-size: 1.6rem;
-    line-height: 2rem;
 }
 
 p, li{
@@ -130,22 +133,33 @@ p, li{
 a {
     font-family: Verdana, sans-serif;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1rem;
     color: var(--text, white);
     text-decoration: none;
 }
 
-/*=====================
-Section styling
-======================*/
+main {
+    position: relative;
+    top: 33vh;
+}
 
+/*Product Listing section*/
+
+figure{
+    position: relative;
+}
+
+cite {
+  display: none;
+}
 
 /*=====================
 Footer
 ======================*/
 
 footer {
-    background-color: var(--footer, black);
+    background-color: black;
+    color: white;
 }
 
 /*=====================
@@ -186,9 +200,7 @@ content: "uh oh! No " attr(title) "";
 Media Queries - Responsiveness
 ==============================*/
 
-
 /*turn off animations based on browser setting*/
-
 
 /*=====================
 Media Queries - Print
