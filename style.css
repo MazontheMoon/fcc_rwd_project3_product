@@ -5,9 +5,9 @@ Declare variables for page
     
     /*colours*/
     --navbar: #08480c; /*green*/
-    --border: #685634; /*brown*/
+    --border: #a5b5bf; /*bluegrey*/
     --text: #e9f1f7; /*offwhite*/
-    --header: #a5b5bf; /*bluegrey*/
+    --header: #4CAF50; /*lightgreen*/
     --pageBG: #ffffff; /*snow*/
 }
 
@@ -21,6 +21,8 @@ body {
   padding: 0;
   font-size: 16px;
   scroll-behavior: smooth;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 body * {
@@ -43,50 +45,35 @@ li, figure {
   border: 0;
 }
 
+/*fallback fonts - never shall Times New Roman be seen again!!!*/
+h1, h3, h4, a, p, li, cite {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
 /*=====================
 Header and Nav Bar
 ======================*/
-
-/*background image for header*/
-h1 {
-  height: 33vh;
-  margin-top: 0;
-   background: linear-gradient(to bottom, var(--navbar), var(--navbar), var(--header), var(--text));
-  background-image: url("https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/leafy-header.jpg?raw=true");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: border-box;
-  position: absolute;
-  top: 0 ;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  border-bottom: 0.5rem solid black;
-  color: var(--navbar, white);
-  font-family: Lobster, Georgia, serif;
-  font-size: 3.5rem;
-  text-shadow: 2px 2px 3px black;
+header {
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 
-.heading {
- 
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  z-index: 10;
+#nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--navbar);
+  background-image: linear-gradient(to bottom, black, var(--navbar));
+  z-index: 100;
 }
 /*nav menu - always at top right of screen*/
 .nav-bar {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: var(--navbar);
-  z-index: 100;
 }
 
 /*logo - always in top left corner*/
@@ -97,7 +84,7 @@ h1 {
 }
 
 /*nav buttons*/
-.nav-link {
+.nav-button {
     margin: auto 10px;
     flex: 0 1 25px;
     outline: none;
@@ -108,42 +95,83 @@ h1 {
 .checkout-float {
     color: var(--text, white);
     background-color: var(--navbar, darkgreen);
+    background-image: linear-gradient(to bottom, black, var(--navbar));
     margin: auto 10px;
     flex: 0 1 25px;
     outline: none;
     padding: 5px;
 }
 
-
-/*fonts styling*/
+/*background image for header*/
+h1 {
+  height: 33vh;
+  width: 100%;
+  margin: 0;
+   background: linear-gradient(to bottom, var(--navbar), var(--navbar), var(--header), var(--text));
+  background-image: url("https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/leafy-header.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  position: relative;
+  top: 0 ;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-bottom: 0.5rem solid black;
+  color: black;
+  font-family: Lobster, Georgia, serif;
+  font-size: 4rem;
+  text-shadow: 2px 2px 3px var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*=====================
 Section styling
 ======================*/
 
 main {
-    position: relative;
-    top: 33vh;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+    background: linear-gradient(to bottom, black, var(--navbar) 5%, var(--header), var(--border));
+}
+
+section{
+  background-color: white;
+  margin: 5px;
+  margin-top: 0;
+  padding: 10px;;
 }
 
 h3 {
+    margin: 0;
+    padding: 5px;
     font-family: Lobster, Verdana, sans-serif;
     font-size: 2rem;
     line-height: 2.2rem;
 }
 
 h4 {
+    margin: 0;
+    padding: 5px;
     font-family: Fondamento, Verdana, sans-serif;
     font-size: 1.6rem;
 }
 
 p, li{
+    margin: 0;
+    padding: 5px;
     font-family: Verdana, sans-serif;
     font-size: 1rem;
     line-height: 1.3rem;
 }
 
 a {
+    margin: 0;
+    padding: 5px;
     font-family: Verdana, sans-serif;
     font-size: 1rem;
     line-height: 1rem;
@@ -166,6 +194,8 @@ Footer
 ======================*/
 
 footer {
+    margin: 0;
+    padding: 0;
     background-color: black;
     color: white;
 }
@@ -180,13 +210,13 @@ display: inherit;
 position: absolute;
 top: 0;
 left: 0;
-padding: 2px;
+padding: 1px;
 border: 1px dashed grey;
 background-color: white;
 z-index: 1;
 font-family: Verdana;
 font-size: 0.8em;
-content: "uh oh!";
+content: "uh oh!:(";
 }
 
 /*In the dreaded case of image not found*/
