@@ -23,6 +23,10 @@ body {
   scroll-behavior: smooth;
   display: flex;
   flex-flow: column nowrap;
+     background-image: url("https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/leafy-header.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 15% 65%;
 }
 
 body * {
@@ -105,6 +109,7 @@ header {
 /*background image for header*/
 h1 {
   height: 33vh;
+  min-height: 200px;
   width: 100%;
   margin: 0;
    background: linear-gradient(to bottom, var(--navbar), var(--navbar), var(--header), var(--text));
@@ -117,7 +122,7 @@ h1 {
   top: 0 ;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 10;
   border-bottom: 0.5rem solid black;
   color: black;
   font-family: Lobster, Georgia, serif;
@@ -136,6 +141,8 @@ main {
     margin: 0 auto;
     padding: 5px;
     background: linear-gradient(to bottom, black, var(--navbar) 5%, var(--header), var(--border));
+  box-shadow: 5px 5px 7.5px white,
+    -5px -5px 7.5px white;
 }
 
 h3 {
@@ -145,13 +152,18 @@ h3 {
     font-size: 2rem;
     line-height: 2.2rem;
     color: var(--text);
+    text-shadow: 2px 2px 3px black;
 }
 
-section p {
-  background-color: white;
+section:first-child p {
+  background-color: rgba(0,0,0, 0.5);
   margin: 5px;
   margin-top: 0;
   padding: 5px;
+  color: var(--text);
+  box-shadow: -5px -5px 10px rgba(0,0,0, 0.5),
+    5px 5px 10px rgba(0,0,0, 0.5);
+  border-radius: 0.8rem;
 }
 
 section {
@@ -245,7 +257,7 @@ background-color: white;
 z-index: 1;
 font-family: Verdana;
 font-size: 0.8em;
-content: "uh oh!";
+content: "uh oh!:(";
 }
 
 /*In the dreaded case of image not found*/
