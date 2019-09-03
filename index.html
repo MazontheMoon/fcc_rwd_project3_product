@@ -4,239 +4,69 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="MazontheMoon">
-    <meta name="description" content="FreeCodeCamp Responsive Web Design Project 3 - Spirit Plants Product Landing">
-    <title>You and your Spirit Plant</title>
+    <meta name="description" content="FreeCodeCamp Responsive Web Design Project 3 - Product Landing Page">
+    <title>Be You</title>
     <link rel="shortcut icon" href="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/favicon.png?raw=true" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- Import fonts and icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Fondamento&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Face-smile.svg/32px-Face-smile.svg.png" type="image/x-icon">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
   </head>
+<!--FreeCodeCamp Responsive Web Design project 3-->
 <body>
-  <!--FreeCodeCamp Responsive Web Design project 3-->
+  <!--------
+   Header - nav bar with logo and animated text entry on header
+  --------->
   <header id="header">
     <nav id="nav-bar">
-      <ul class="nav-bar">
-        <li class="logo"><img id="header-img" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/logo.png?raw=true" alt="logo" title="Spirit Plants Logo"></li>
-        <li class="nav-button"><a class="nav-link" href="#who_link">Who</a></li>
-        <li class="nav-button"><a class="nav-link" href="#what_link">What</a></li>
-        <li class="nav-button"><a class="nav-link" href="#why_link">Why</a></li>
-        <li class="nav-button"><a class="nav-link" href="#how_link">How</a></li>
-        <!--placeholder dummy for a floating basket total/checkout-->
-        <li class="checkout-float"><i class="fas fa-shopping-cart"></i></li>
+      <ul>
+        <li>
+          <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Face-smile.svg/32px-Face-smile.svg.png" alt="Smiley logo" title"Be logo">
+        </li>
+        <li class="nav-link">What</li>
+        <li class="nav-link">Why</li>
+        <li class="nav-link">How</li>
       </ul>
-      <!--placeholder dummy for a floating basket total/checkout under nav bar-->
     </nav>
-    <h1><span class="heading">Spirit Plants</span></h1>
+    <h1>Be Happy <br> Be Sad <br> Be You</h1>
   </header>
+  <!--------
+   main
+  --------->
   <main>
-    <!--header with fixed nav bar at top of screen includes icon and page title with background image-->
-    <!--Intro section for who created the Spirit Plant product-->
-    <section id="who_link">
-      <h3>Who we are</h3>
-      <p>We believe everyone should have a plant buddy in their life but growing a plant can be tricky so we raise your plant from seed to maturity ready to find their forever home with you.</p>
+    <!--What Section - product listing-->
+    <section id="what-block">
+      <h2>Be You</h2>
+      <ul id="prod-list"></ul>
     </section>
-    <!--Shopping cart section with list of all products-->
-    <section id="what_link">
-      <h3>What we do</h3>
-      <div class="productlist">
-        <!--Cactus-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Cactus</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/cactus_500.png?raw=true" alt="Top down view of a flowering cactus" title="Cactus" width="250" height="250">
-          <cite>Photo by <a href="https://unsplash.com/photos/lOPUtgcpGwg">Priss Enri</a></cite>  
-          </figure>
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of the Cactus are building a life of security, being prickly is optional!</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-        <!--Daisy-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Daisy</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/Daisy_500.png?raw=true" alt="Daisy" title="Daisy" width="250" height="250">
-            <cite>Photo by <a href="https://unsplash.com/photos/410vhNRq7_Q">Aaron Burden on Unsplash</a></cite>
-          </figure>
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of the Daisy believe fitness and health are the key to a long life</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-        <!--Foxglove-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Foxglove</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/foxglove_500.png?raw=true" alt="Foxglove" title="Foxglove" width="250" height="250">
-            <cite>Photo by <a href="https://unsplash.com/photos/jG_fmvVgNpM">Maik Jonietz</a></cite>
-          </figure>
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of the Foxglove seek to invite the fae folk into their lives with this poisonous plant</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-        <!--Ivy-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Ivy</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/ivy_500.png?raw=true" alt="Ivy" title="Ivy" width="250" height="250">
-            <cite>Photo by <a href="https://unsplash.com/photos/Sz4iD0pipxc">Asoggetti</a></cite>
-          </figure>
-          
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of Ivy live for friendship and intelligent social circles and always own a magnifying glass</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-        <!--Lavender-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Lavender</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/lavendar_500.png?raw=true" alt="Lavender" title="Lavender" width="250" height="250">
-            <cite>Photo by <a href="https://unsplash.com/photos/SavQfLRm4Do">Sharon McCutcheon</a></cite>
-          </figure>
-          
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of Lavender love to relax and live in the moment</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-        <!--Poppy-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Poppy</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/poppy_500.png?raw=true" alt="Poppy" title="Poppy" width="250" height="250">
-            <cite>Photo by <a href="https://unsplash.com/photos/hAHvxE9DASU">Annie Spratt</a></cite>
-          </figure>
-          
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of the Poppy wish to commune with all life the universe</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-        <!--Rose-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Rose</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/rose_500.png?raw=true" alt="Rose" title="Rose" width="250" height="250">
-            <cite>Photo by <a href="https://unsplash.com/photos/gcWd0ts4RCo">Ameen Fahmy</a></cite>
-          </figure>
-          
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of the Rose life is all about being with those you love.</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-        <!--Shamrock-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Shamrock</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/shamrock_500.png?raw=true" alt="Shamrock" title="Shamrock" width="250" height="250">
-            <cite>Photo by <a href="https://unsplash.com/photos/4_cK-T0_TD4">Kelly Sikkema</a></cite>
-          </figure>
-          
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of Shamrock believe in good luck</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-        <!--Sunflower-->
-        <div class="productbox">
-          <!--name of plant for sale-->
-          <h4>Sunflower</h4>
-          <!--image of plant for sale-->
-          <figure class="plant-img">
-            <img class="plantheadshot" src="https://github.com/MazontheMoon/fcc_rwd_project3_product/blob/master/images/sunflower_500.png?raw=true" alt="Sunflower" title="Sunflower" width="250" height="250">
-            <cite>Photo by <a href="https://unsplash.com/photos/xt-8Bj1lR2Y">Jason Leung</a></cite>
-          </figure>
-          
-          <!--description of plant for sale-->
-          <p class="plant-info">Those with the spirit of the Sunflower are all about letting the happiness in</p>
-          <!--buy button-->
-          <div class="plant-buy">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-        </div>
-      </div>
+    <!--Why Section - video-->
+    <section id="why-block">
+      <div id="video"></div>
+      <h2>Just cos...</h2>
     </section>
-    <!--Review section with advertising video-->
-    <section id="why_link">
-      <h3>Why we do this</h3>
-      <p>We could go on about the beauty of plants, or the health benefits of plants in your home, or at the office, but why not let our customers speak for themselves…</p>
-      <ul class="reviewlist">
-        <li class="reviewbox">
-          <p>I love my spirit Ivy plant! It is hanging in the bathroom and I sing to it every morning when I shower.</p>
-        </li>
-        <li>
-          <p>I’m a terrible gardener but found the care guide for my Spirit Plant so easy to follow that two years later my Rose is still looking great.</p>
-        </li>
-        <li>
-          <p>Our son was being bullied at school and found it hard to talk about so we got him a Spirit Cactus and he tells all his troubles to it and is much happier now.</p>
-        </li>
-        <li>
-          <p>I tell my Poppy all about my day when I get home and unlike my cat it doesn’t judge me!!</p>
-        </li>
-      </ul>
-      <figure class="videobox">
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xW_AsV7k42o?start=5" allowfullscreen></iframe>
-      </figure>
-    </section>
-    <!--signup form section-->
-    <section id="how_link">
-      <h3>How do we do what we do</h3>
-      <p>We only source seeds from healthy parent plants</p>
-      <p>We make our own special compost to ensure the healthiest and strongest plants</p>
-      <p>Join up to learn more about the lifecycle of your plant and our reuse and recycle gardening philosophy as well as lots of other tips from our experts</p>
-      <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
-        <input type="text" id="name" name="name" placeholder="Greenthumb">
-        <input type="email" id="email" name="email" placeholder="email@email.com">
-        <input type="submit" id="submit" value="Join">
-        <input type="hidden" id="timestamp" name="timestamp" value="July 2019">
-        <p class="fineprint">No spam - not even cute cat photos</p>
+    <!--How Section - signup form-->
+    <section id="how-block">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name" placeholder="imaginativename2019">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="myemail@email.com">
+        </div>
+        <div>
+          <button type="submit" id="submit">Join</button>
+        </div>
+        
       </form>
     </section>
   </main>
-  <footer>
-      <!--contact details-->
-      <a href="mailto:fakeemail@fakespiritplants.fake">Contact Us</a>
-      <!--boring stuff like disclaimer or legal or copyright-->
-      <p>This FreeCodeCamp <span class="fab fa-free-code-camp"></span> project is brought to you by <abbr title="HTML5"><span class="fab fa-html5"></span></abbr> and <abbr title="CSS3"><span class="fab fa-css3"></span></abbr>and is for a fictional product</p>
-      <!--made be me!-->
-      <p>Designed by Mary Ronan 2019<span class="fab fa-linkedin"></span><span class="fab fa-github-square"></span></p>
-    </footer>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!--------
+   footer
+  --------->
+  <footer></footer>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
