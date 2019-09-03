@@ -1,7 +1,7 @@
 # fcc_rwd_project3_product
 Project 3 of 5 for FreeCodeCamp Responsive Web Design Certification
 
-A Product Landing page for a fictional company selling Spirit Plants
+A Product Landing page for a fictional company called "Be" selling a free product of smiles (and non-smiles)
 
 Designed and Coded by Mary Ronan
 
@@ -18,34 +18,31 @@ Project log:
 
 Content:
 
-Header will include background image with logo, title and navigation menu.
+Header will include logo, animated title text and navigation menu.
 
 Nav items:
-1 - Who
-2 - What
-3 - Why
-4 - How
-5 - When *not shown in mobile views
-6 - Where * not shown in mobile views
+1 - What
+2 - Why
+3 - How
 
 
 List of Products:
 
-Cactus
-Daisy
-Foxglove
-Ivy
-Lavendar
-Poppy
-Rose
-Shamrock
-Sunflower
+Smile
+Grin
+Gring tears
+Sad
+Sad Crying
+Meh
+Meh Rollingeyes
+Annoyed
+Angry
 
-Each Product listing will include image, name, description and add to basket button
+Each Product listing will include icon and short description and free price tag
 
 
 Contact
 
-Link to send an email and simple sign up form for mailing list
+Link to send an email in footer and simple sign up form for mailing list
 
 
