@@ -7,13 +7,12 @@ Designed and Coded by Mary Ronan
 
 Project log:
 1. Gather Content (text, images and video)
-2. Refine Content
-3. Design responsive layout on paper
-4. Build skeleton of page
-5. Add initial page styles - split into relevent sections
-6. Replace placeholder content with final draft of written content and images for gallery
-7. Additional styling for each section including animations
-8. Media Queries for responsiveness & print
+2. Refine Content (format and grammar check text, optimise images)
+3. Design responsive layout on paper (Monitor and mobile screen view)
+4. Build skeleton of page (HTML) with content
+5. Add initial page styles - split into relevent sections(CSS)
+6. Additional styling for each section including animations
+7. Media Queries for responsiveness & print
 
 
 Content:
@@ -38,7 +37,7 @@ Meh Rollingeyes
 Annoyed
 Angry
 
-Each Product listing will include icon and short description and free price tag
+Each Product listing will include icon and short description and and "price" information
 
 
 Contact
