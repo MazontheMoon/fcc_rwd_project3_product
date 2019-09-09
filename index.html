@@ -15,51 +15,72 @@
   </head>
 <!--FreeCodeCamp Responsive Web Design project 3-->
 <body>
-  <!--------
-   Header - nav bar with logo and animated text entry on header
-  --------->
+  <!--------------------------------------------
+   Header - nav bar with logo and animated text 
+  ---------------------------------------------->
   <header id="header">
     <nav id="nav-bar">
-      <ul>
+      <ul class="navbar">
         <li>
           <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Face-smile.svg/32px-Face-smile.svg.png" alt="Smiley logo" title"Be logo">
         </li>
-        <li class="nav-link">What</li>
-        <li class="nav-link">Why</li>
-        <li class="nav-link">How</li>
+        <li>
+          <ul class="menu">
+            <li><a class="nav-link">What</a></li>
+            <li><a class="nav-link">Why</a></li>
+            <li><a class="nav-link">How</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
-    <h1>Be Happy <br> Be Sad <br> Be You</h1>
+    <h1>
+      <span id="header-anim1">Be Happy</span> 
+      <span id="header-anim2">Be Sad</span>
+      <span id="header-anim3">Be Anything</span>
+      <span id="header-anim4">Be You</span>
+    </h1>
   </header>
-  <!--------
-   main
-  --------->
+  <!----------------------------------
+   main - 3 sections (What, Why, How)
+  ----------------------------------->
   <main>
     <!--What Section - product listing-->
     <section id="what-block">
-      <h2>Be You</h2>
-      <ul id="prod-list"></ul>
+      <h2>Be...</h2>
+      <!--Gallery grid of products-->
+      <ul id="prod-list">
+        <!--product-->
+        <li class="prod">
+          <figure>
+            <!--profilepic-->
+            <div class="profilepic"><i class="far fa-smile"></i><i class="fas fa-smile"></i></div>
+            <!--name-->
+            <figcaption>Happy</figcaption>
+            <!--price-->
+            <p><span class="price">What's a Happy Thought</span><span>That scene in ... snappy referenced to be thought of later</span></p>
+          </figure>
+        </li>
+      </ul>
     </section>
     <!--Why Section - video-->
     <section id="why-block">
-      <div id="video"></div>
+      <div id="video"><iframe src="https://www.youtube.com/embed/814gP_yHcAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; mute;"></iframe></div>
       <h2>Just cos...</h2>
     </section>
     <!--How Section - signup form-->
     <section id="how-block">
       <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="user_name" placeholder="imaginativename2019">
+        <div class="formbox">
+          <!--no labels as user story for placeholder text to explain the function making labels redundant-->
+          <input type="text" id="name" name="name" placeholder="Name">
         </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="myemail@email.com">
+        <div class="formbox">
+          <input type="email" id="email" name="email" placeholder="Email">
         </div>
-        <div>
+        <input type="hidden" id="timestamp" name="timestamp" value="September 2019">
+        <div class="formbox">
           <button type="submit" id="submit">Join</button>
         </div>
-        
       </form>
     </section>
   </main>
