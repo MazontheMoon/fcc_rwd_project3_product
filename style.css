@@ -3,8 +3,9 @@ Declare variables for page
 =========================*/
 :root {
     
-    /*colours - light as Jedi mode*/
+   /*colours - light as Jedi mode*/
    /*colours - dark as Sith mode*/
+  /*emotion colours*/
 
 }
 
@@ -37,11 +38,14 @@ ul {
 }
 
 /*fallback fonts - never shall Times New Roman be seen again!!!*/
-h1, h2, a, p, li, label, cite {
+h1, h2, a, p, figcaption, input, button {
   font-family: Verdana, sans-serif;
-  margin: 0;
 }
 
+/*
+font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
+*/
 /*=====================
 Header and Nav Bar
 ======================*/
