@@ -3,10 +3,57 @@ Declare variables for page
 =========================*/
 :root {
     
-   /*colours - light as Jedi mode*/
-   /*colours - dark as Sith mode*/
+   /*colours - light as the Jedi mode*/
+  
+  /*backgrounds, boxes and borders, oh my*/
+  --navbar: #f5f5f5; /*offwhite*/
+  --h1-sec1: #F44336; /*red*/
+  --h1-sec2: #FFEB3B; /*yellow*/
+  --h1-sec3: #2196F3; /*blue*/
+  --h1-sec4: #4527A0; /*purple*/
+  --sec-box: #f5f5f5; /*offwhite*/
+  --sec1-side: #F44336; /*red*/
+  --sec2-side: #FFEB3B; /*yellow*/
+  --sec2-side: #2196F3; /*blue*/
+  --footer: #f5f5f5; /*offwhite*/
+ 
   /*emotion colours*/
-
+  --smile-main: #FFEB3B;
+  --smile-line: #FFF9C4;
+  --smle-full: #F9A825;
+  --grin-main: #FF5722;
+  --grin-line: #FFAB91;
+  --grin-full: #D84315;
+  --grincry-main: #4CAF50;
+  --grincry-line: #C8E6C9;
+  --grincry-full: #2E7D32;
+  --sad-main: #2196F3;
+  --sad-line: #BBDEFB;
+  --sad-full: #1565C0;
+  --sadcry-main: #009688;
+  --sadcry-line: #B2DFDB;
+  --sadcry-full: #00695C;
+  --meheyes-main: #607D8B;
+  --meheyes-line: #CFD8DC;
+  --meheyes-full: #455A64;
+  --meh-main: #8D6E63;
+  --meh-line: #D7CCC8;
+  --meh-full: #5D4037;
+  --angry-main: #F44336;
+  --angry-line: #FFCDD2;
+  --angry-full: #B71C1C;
+  --annoyed-main: #E91E63;
+  --annoyed-line: #F8BBD0;
+  --annoyed-full: #AD1457;
+  
+  /*text*/
+  --heading: #262626;
+  --words: #262626;
+  --buttons: #262626;
+  
+  /*colours - dark as Sith mode*/
+  /*emotion colours*/
+  /*text*/
 }
 
 /*=====================
