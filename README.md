@@ -39,9 +39,15 @@ Angry
 
 Each Product listing will include icon and short description and and "price" information
 
+Th price in each case is not monetory, for example the cost of a smile is a happy thought and includes a hint for the happy thought
+
 
 Contact
 
 Link to send an email in footer and simple sign up form for mailing list
+
+Disclaimer
+
+This is a FreeCodeCamp project for Responsive Web Design
 
 
