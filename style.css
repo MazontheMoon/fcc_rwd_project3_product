@@ -102,6 +102,10 @@ header {
   height: 25vh;
 }
 
+#header-img {
+  margin: 2px;
+}
+
 #nav-bar {
   position: fixed;
   top: 0;
@@ -116,8 +120,17 @@ header {
 }
 
 .navbar {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 100%;
   display: flex;
   flex-flow: row nowrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 2px 10px;
 }
 
 /*=====================
