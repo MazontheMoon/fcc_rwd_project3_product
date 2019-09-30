@@ -89,17 +89,20 @@ h1, h2, a, p, figcaption, input, button {
   font-family: Verdana, sans-serif;
 }
 
-/*
-font-family: 'Righteous', cursive;
-font-family: 'Roboto', sans-serif;
-*/
+/*fonts*/
+h1, h2, h4, figcaption {
+  font-family: 'Righteous', cursive;
+}
+
+a, p, input, placeholder, button {
+  font-family: 'Roboto', sans-serif;
+}
 
 /*=====================
 Header and Nav Bar
 ======================*/
 header {
   position: relative;
-  height: 25vh;
 }
 
 #header-img {
@@ -131,6 +134,39 @@ header {
 .nav-link {
   text-decoration: none;
   padding: 2px 10px;
+  color: var(--text);
+}
+
+/*animated slide in header text*/
+
+h1 {
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'anim1 anim2 anim3'
+    'anim4 anim4 anim4';
+  text-align: center;
+}
+
+h1 #header-anim1{
+  background-color: var(--h1-sec1);
+  grid-area: anim1;
+}
+
+h1 #header-anim2{
+  background-color: var(--h1-sec2);
+  grid-area: anim2;
+}
+
+h1 #header-anim3{
+  background-color: var(--h1-sec3);
+  grid-area: anim3;
+}
+
+h1 #header-anim4{
+  background-color: var(--h1-sec4);
+  grid-area: anim4;
 }
 
 /*=====================
@@ -143,6 +179,18 @@ Little touches
 ======================*/
 
 /*In the dreaded case of image not found*/
+img:after {
+display: inherit;
+position: absolute;
+top: 0;
+left: 0;
+padding: 1px;
+border: 1px dashed grey;
+background-color: white;
+z-index: 1;
+font-family: Verdana;
+font-size: 0.8em;
+content: "uh oh!";
 
 /*=============================
 Media Queries - Responsiveness
