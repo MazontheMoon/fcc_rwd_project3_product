@@ -14,7 +14,7 @@ Declare variables for page
   --sec-box: #f5f5f5; /*offwhite*/
   --sec1-side: #F44336; /*red*/
   --sec2-side: #FFEB3B; /*yellow*/
-  --sec2-side: #2196F3; /*blue*/
+  --sec3-side: #2196F3; /*blue*/
   --footer: #f5f5f5; /*offwhite*/
  
   /*emotion colours*/
@@ -64,7 +64,7 @@ html {
 }
 
 /*set global styles*/
-body {
+body{
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -75,7 +75,6 @@ body * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
 
 /*remove default list styling*/
 ul {
@@ -103,6 +102,7 @@ Header and Nav Bar
 ======================*/
 header {
   position: relative;
+  margin: 0;
 }
 
 #header-img {
@@ -141,6 +141,7 @@ header {
 
 h1 {
   font-size: 3rem;
+  line-height: 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
@@ -172,7 +173,56 @@ h1 #header-anim4{
 /*=====================
 Section styling
 ======================*/
+main { 
+  width: 60%;
+  margin: 0 auto;
+}
 
+section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#what-block {
+  border: 0.5rem solid var(--sec1-side);
+  margin: 1rem;
+  padding: 0;
+}
+
+#what-block h2 {
+  width: 25%;
+  margin: 0;
+  background-color: var(--sec1-side);
+}
+
+#why-block {
+  border: 0.5rem solid var(--sec2-side);
+  margin: 1rem;
+  padding: 0;
+}
+
+#why-block h2 {
+  width: 25%;
+  background-color: var(--sec2-side);
+}
+
+#how-block {
+  border: 0.5rem solid var(--sec3-side);
+  margin: 1rem;
+  padding: 0;
+}
+
+#how-block h2 {
+  width: 25%;
+  background-color: var(--sec3-side);
+}
+
+/*=====================
+footer
+======================*/
+footer {
+  padding: 1.5rem;
+}
 
 /*=====================
 Little touches
