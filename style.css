@@ -2,55 +2,54 @@
 Declare variables for page
 =========================*/
 :root {
-    
-   /*colours - light as the Jedi mode by default*/
-  
+  /*colours - light as the Jedi mode by default*/
+
   /*backgrounds, boxes and borders, oh my*/
   --navbar: #f5f5f5; /*offwhite*/
-  --h1-sec1: #F44336; /*red*/
-  --h1-sec2: #FFEB3B; /*yellow*/
-  --h1-sec3: #2196F3; /*blue*/
-  --h1-sec4: #4527A0; /*purple*/
+  --h1-sec1: #f44336; /*red*/
+  --h1-sec2: #ffeb3b; /*yellow*/
+  --h1-sec3: #2196f3; /*blue*/
+  --h1-sec4: #4527a0; /*purple*/
   --sec-box: #f5f5f5; /*offwhite*/
-  --sec1-side: #F44336; /*red*/
-  --sec2-side: #FFEB3B; /*yellow*/
-  --sec3-side: #2196F3; /*blue*/
+  --sec1-side: #f44336; /*red*/
+  --sec2-side: #ffeb3b; /*yellow*/
+  --sec3-side: #2196f3; /*blue*/
   --footer: #f5f5f5; /*offwhite*/
- 
+
   /*emotion colours*/
-  --smile-main: #FFEB3B;
-  --smile-line: #FFF9C4;
-  --smle-full: #F9A825;
-  --grin-main: #FF5722;
-  --grin-line: #FFAB91;
-  --grin-full: #D84315;
-  --grincry-main: #4CAF50;
-  --grincry-line: #C8E6C9;
-  --grincry-full: #2E7D32;
-  --sad-main: #2196F3;
-  --sad-line: #BBDEFB;
-  --sad-full: #1565C0;
+  --smile-main: #ffeb3b;
+  --smile-line: #fff9c4;
+  --smle-full: #f9a825;
+  --grin-main: #ff5722;
+  --grin-line: #ffab91;
+  --grin-full: #d84315;
+  --grincry-main: #4caf50;
+  --grincry-line: #c8e6c9;
+  --grincry-full: #2e7d32;
+  --sad-main: #2196f3;
+  --sad-line: #bbdefb;
+  --sad-full: #1565c0;
   --sadcry-main: #009688;
-  --sadcry-line: #B2DFDB;
-  --sadcry-full: #00695C;
-  --meheyes-main: #607D8B;
-  --meheyes-line: #CFD8DC;
-  --meheyes-full: #455A64;
-  --meh-main: #8D6E63;
-  --meh-line: #D7CCC8;
-  --meh-full: #5D4037;
-  --angry-main: #F44336;
-  --angry-line: #FFCDD2;
-  --angry-full: #B71C1C;
-  --annoyed-main: #E91E63;
-  --annoyed-line: #F8BBD0;
-  --annoyed-full: #AD1457;
-  
+  --sadcry-line: #b2dfdb;
+  --sadcry-full: #00695c;
+  --meheyes-main: #607d8b;
+  --meheyes-line: #cfd8dc;
+  --meheyes-full: #455a64;
+  --meh-main: #8d6e63;
+  --meh-line: #d7ccc8;
+  --meh-full: #5d4037;
+  --angry-main: #f44336;
+  --angry-line: #ffcdd2;
+  --angry-full: #b71c1c;
+  --annoyed-main: #e91e63;
+  --annoyed-line: #f8bbd0;
+  --annoyed-full: #ad1457;
+
   /*text*/
   --heading: #262626;
   --words: #262626;
   --buttons: #262626;
-  
+
   /*colours - dark as Sith mode*/
   /*emotion colours*/
   /*text*/
@@ -64,7 +63,7 @@ html {
 }
 
 /*set global styles*/
-body{
+body {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -84,17 +83,28 @@ ul {
 }
 
 /*fallback fonts - never shall Times New Roman be seen again!!!*/
-h1, h2, a, p, figcaption, input, button {
+h1,
+h2,
+a,
+p,
+figcaption,
+input {
   font-family: Verdana, sans-serif;
 }
 
 /*fonts*/
-h1, h2, h4, figcaption {
-  font-family: 'Righteous', cursive;
+h1,
+h2,
+h4,
+figcaption {
+  font-family: "Righteous", cursive;
 }
 
-a, p, input, placeholder, button {
-  font-family: 'Roboto', sans-serif;
+a,
+p,
+input,
+placeholder {
+  font-family: "Roboto", sans-serif;
 }
 
 /*=====================
@@ -119,6 +129,8 @@ header {
   display: flex;
   flex-flow: row nowrap;
   background-color: var(--navbar);
+  background: linear-gradient(50deg, purple, blue, yellow, red);
+  color: var(--navbar);
   border-bottom: solid 2px black;
 }
 
@@ -145,27 +157,27 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    'anim1 anim2 anim3'
-    'anim4 anim4 anim4';
+    "anim1 anim2 anim3"
+    "anim4 anim4 anim4";
   text-align: center;
 }
 
-h1 #header-anim1{
+h1 #header-anim1 {
   background-color: var(--h1-sec1);
   grid-area: anim1;
 }
 
-h1 #header-anim2{
+h1 #header-anim2 {
   background-color: var(--h1-sec2);
   grid-area: anim2;
 }
 
-h1 #header-anim3{
+h1 #header-anim3 {
   background-color: var(--h1-sec3);
   grid-area: anim3;
 }
 
-h1 #header-anim4{
+h1 #header-anim4 {
   background-color: var(--h1-sec4);
   grid-area: anim4;
 }
@@ -173,7 +185,7 @@ h1 #header-anim4{
 /*=====================
 Section styling
 ======================*/
-main { 
+main {
   width: 60%;
   margin: 0 auto;
 }
@@ -189,7 +201,7 @@ section {
   padding: 0;
 }
 
-#what-block h2 {
+#what-block .sec-blk:first-child {
   width: 25%;
   margin: 0;
   background-color: var(--sec1-side);
@@ -201,8 +213,15 @@ section {
   padding: 0;
 }
 
-#why-block h2 {
+#why-block .sec-blk:first-child {
+  width: 75%;
+  margin: 0;
+}
+
+#why-block .sec-blk:last-child {
   width: 25%;
+  margin: 0;
+  padding: 1rem;
   background-color: var(--sec2-side);
 }
 
@@ -212,7 +231,7 @@ section {
   padding: 0;
 }
 
-#how-block h2 {
+#how-block .sec-blk:first-child {
   width: 25%;
   background-color: var(--sec3-side);
 }
@@ -222,6 +241,8 @@ footer
 ======================*/
 footer {
   padding: 1.5rem;
+  background: linear-gradient(50deg, red, blue, purple);
+  color: var(--navbar);
 }
 
 /*=====================
@@ -230,17 +251,18 @@ Little touches
 
 /*In the dreaded case of image not found*/
 img:after {
-display: inherit;
-position: absolute;
-top: 0;
-left: 0;
-padding: 1px;
-border: 1px dashed grey;
-background-color: white;
-z-index: 1;
-font-family: Verdana;
-font-size: 0.8em;
-content: "uh oh!";
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  border: 1px dashed grey;
+  background-color: white;
+  z-index: 1;
+  font-family: Verdana;
+  font-size: 0.8em;
+  content: "uh oh!";
+}
 
 /*=============================
 Media Queries - Responsiveness
