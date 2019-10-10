@@ -19,35 +19,27 @@ Declare variables for page
   /*emotion colours*/
   --smile-main: #ffeb3b;
   --smile-line: #fff9c4;
-  --smle-full: #f9a825;
   --grin-main: #ff5722;
   --grin-line: #ffab91;
-  --grin-full: #d84315;
   --grincry-main: #4caf50;
   --grincry-line: #c8e6c9;
-  --grincry-full: #2e7d32;
   --sad-main: #2196f3;
   --sad-line: #bbdefb;
-  --sad-full: #1565c0;
   --sadcry-main: #009688;
   --sadcry-line: #b2dfdb;
-  --sadcry-full: #00695c;
   --meheyes-main: #607d8b;
   --meheyes-line: #cfd8dc;
-  --meheyes-full: #455a64;
   --meh-main: #8d6e63;
   --meh-line: #d7ccc8;
-  --meh-full: #5d4037;
   --angry-main: #f44336;
   --angry-line: #ffcdd2;
-  --angry-full: #b71c1c;
   --annoyed-main: #e91e63;
   --annoyed-line: #f8bbd0;
-  --annoyed-full: #ad1457;
 
   /*text*/
   --heading: #262626;
-  --words: #262626;
+  --words: #f5f5f5;
+  --wordsRev: #262626;
   --buttons: #262626;
 
   /*colours - dark as Sith mode*/
@@ -129,7 +121,7 @@ header {
   flex-flow: row nowrap;
   background-color: var(--navbar);
   background: linear-gradient(50deg, purple, blue, yellow, red);
-  color: var(--navbar);
+  color: var(--words);
   border-bottom: solid 2.5px black;
   z-index: 999;
 }
@@ -153,7 +145,7 @@ header {
 
 /*nav buttons on select*/
 
-/*animated slide in header text*/
+/*slide in to position header text then color fade and brighten animation*/
 h1 {
   font-size: 3rem;
   line-height: 6rem;
@@ -249,7 +241,7 @@ section {
   display:flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 /*=====================
@@ -303,7 +295,6 @@ Product listing grid
   background-color: var(--meheyes-main);
 }
 
-
 .product:nth-of-type(7)
 {
   background-color: var(--meh-main);
@@ -320,23 +311,50 @@ Product listing grid
 }
 
 .profilepic {
-  position: relative;
-}
-
-.profilepic {
   font-size: 4.5rem;
   text-align: center;
   padding: 1rem;
 }
 
-.profilepic-over {
+
+figcaption {
+  color: var(--wordsRev);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/*"price" appears in product box on hover*/
+figure p {
+  position: relative;
+  color: var(--wordsRev);
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+figure p .price-over {
   display: none;
 }
 
-.price-over {
-  display: none;
+figure p:hover .price-over{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5rem;
+  cursor: pointer;
+  z-index: 25;
+  background: linear-gradient(90deg, black, red, black);
+  color: var(--words);
+  padding: 1rem;
+  border: solid 1px black;
 }
-
 /*=====================
 Media section - video
 ======================*/
