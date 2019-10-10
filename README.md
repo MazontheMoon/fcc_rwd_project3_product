@@ -15,17 +15,17 @@ Project log:
 7. Media Queries for responsiveness & print
 
 
-Content:
+# Content:
 
 Header will include logo, animated title text and navigation menu.
 
-Nav items:
+# Nav items:
 1 - What
 2 - Why
 3 - How
 
 
-List of Products:
+# List of Products:
 
 Smile
 Grin
@@ -37,16 +37,18 @@ Meh Rollingeyes
 Annoyed
 Angry
 
+
+
 Each Product listing will include icon and short description and and "price" information
 
 Th price in each case is not monetory, for example the cost of a smile is a happy thought and includes a hint for the happy thought
 
 
-Contact
+# Contact
 
 Link to send an email in footer and simple sign up form for mailing list
 
-Disclaimer
+# Disclaimer
 
 This is a FreeCodeCamp project for Responsive Web Design
 
