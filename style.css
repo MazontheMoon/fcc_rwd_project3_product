@@ -2,7 +2,6 @@
 Declare variables for page
 =========================*/
 :root {
-  /*colours - light as the Jedi mode by default*/
 
   /*backgrounds, boxes and borders, oh my*/
   --navbar: #f5f5f5; /*offwhite*/
@@ -18,33 +17,21 @@ Declare variables for page
 
   /*emotion colours*/
   --smile-main: #ffeb3b;
-  --smile-line: #fff9c4;
   --grin-main: #ff5722;
-  --grin-line: #ffab91;
   --grincry-main: #4caf50;
-  --grincry-line: #c8e6c9;
   --sad-main: #2196f3;
-  --sad-line: #bbdefb;
   --sadcry-main: #009688;
-  --sadcry-line: #b2dfdb;
   --meheyes-main: #607d8b;
-  --meheyes-line: #cfd8dc;
   --meh-main: #8d6e63;
-  --meh-line: #d7ccc8;
   --angry-main: #f44336;
-  --angry-line: #ffcdd2;
   --annoyed-main: #e91e63;
-  --annoyed-line: #f8bbd0;
 
   /*text*/
   --heading: #262626;
   --words: #f5f5f5;
   --wordsRev: #262626;
   --buttons: #262626;
-
-  /*colours - dark as Sith mode*/
-  /*emotion colours*/
-  /*text*/
+  
 }
 
 /*=====================
@@ -52,6 +39,7 @@ Basic Styles and Layout
 ======================*/
 html {
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 /*set global styles*/
@@ -154,6 +142,7 @@ h1 {
   grid-template-areas:
     "anim1 anim2 anim3"
     "anim4 anim4 anim4";
+  grid-gap: 2px;
   text-align: center;
   border-bottom: solid 2.5px black;
 }
@@ -324,7 +313,6 @@ figcaption {
   line-height: 2rem;
 }
 
-/*"price" appears in product box on hover*/
 figure p {
   position: relative;
   color: var(--wordsRev);
@@ -333,28 +321,6 @@ figure p {
   line-height: 1.5rem;
 }
 
-figure p .price-over {
-  display: none;
-}
-
-figure p:hover .price-over{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  line-height: 1.5rem;
-  cursor: pointer;
-  z-index: 25;
-  background: linear-gradient(90deg, black, red, black);
-  color: var(--words);
-  padding: 1rem;
-  border: solid 1px black;
-}
 /*=====================
 Media section - video
 ======================*/
@@ -365,6 +331,9 @@ Media section - video
 /*=====================
 Contact form
 ======================*/
+
+
+
 /*=====================
 footer
 ======================*/
