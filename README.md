@@ -29,7 +29,7 @@ Header will include logo, animated title text and navigation menu.
 
 Smile
 Grin
-Gring tears
+Grinning tears
 Sad
 Sad Crying
 Meh
@@ -46,10 +46,10 @@ Th price in each case is not monetory, for example the cost of a smile is a happ
 
 # Contact
 
-Link to send an email in footer and simple sign up form for mailing list
+Link to send an email and simple sign up form for mailing list
 
 # Disclaimer
 
-This is a FreeCodeCamp project for Responsive Web Design
+This is a FreeCodeCamp project for Responsive Web Design and it is not a real product as such
 
 
