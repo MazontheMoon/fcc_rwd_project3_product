@@ -5,6 +5,8 @@ Declare variables for page
 
   /*backgrounds, boxes and borders, oh my*/
   --navbar: #f5f5f5; /*offwhite*/
+  --navdark: #4527a0; /*purple*/
+  --nav-fade: #AB47BC; /*violet*/
   --h1-sec1: #f44336; /*red*/
   --h1-sec2: #ffeb3b; /*yellow*/
   --h1-sec3: #2196f3; /*blue*/
@@ -16,22 +18,20 @@ Declare variables for page
   --footer: #f5f5f5; /*offwhite*/
 
   /*emotion colours*/
-  --smile-main: #ffeb3b;
-  --grin-main: #ff5722;
-  --grincry-main: #4caf50;
-  --sad-main: #2196f3;
-  --sadcry-main: #009688;
-  --meheyes-main: #607d8b;
-  --meh-main: #8d6e63;
-  --angry-main: #f44336;
-  --annoyed-main: #e91e63;
+  --smile-main: #ffeb3b; /*yellow*/
+  --grin-main: #ff5722; /*orange*/
+  --grincry-main: #4caf50; /*green*/
+  --sad-main: #2196f3; /*blue*/
+  --sadcry-main: #009688; /*teal*/
+  --meheyes-main: #607d8b; /*grey*/
+  --meh-main: #8d6e63; /*brown*/
+  --angry-main: #f44336; /*pink*/
+  --annoyed-main: #e91e63; /*red*/
 
   /*text*/
-  --heading: #262626;
-  --words: #f5f5f5;
-  --wordsRev: #262626;
-  --buttons: #262626;
-  
+  --heading: #262626; /*black*/
+  --words: #f5f5f5; /*white*/
+  --wordsRev: #262626; /*black*/
 }
 
 /*=====================
@@ -108,7 +108,7 @@ header {
   display: flex;
   flex-flow: row nowrap;
   background-color: var(--navbar);
-  background: linear-gradient(50deg, purple, blue, yellow, red);
+  background: linear-gradient(90deg, var(--navdark), var(--nav-fade));
   color: var(--words);
   border-bottom: solid 2.5px black;
   z-index: 999;
@@ -230,7 +230,7 @@ section {
   display:flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 /*=====================
@@ -252,6 +252,14 @@ Product listing grid
   margin: 0.5rem;
   display: flex;
   flex-flow: column nowrap;
+}
+
+.product figure div {
+  flex: 2;
+}
+
+.product figure figcaption, .product figure p {
+  flex: 1;
 }
 
 .product:nth-of-type(1)
@@ -314,7 +322,6 @@ figcaption {
 }
 
 figure p {
-  position: relative;
   color: var(--wordsRev);
   text-align: center;
   font-size: 1.2rem;
@@ -332,15 +339,50 @@ Media section - video
 Contact form
 ======================*/
 
+#how-block .sec-blk{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+form {
+  border: var(--sec3-side) 1rem solid;
+  padding: 1rem;
+  margin: 1rem;
+}
 
+form * {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+form p {
+  color: var(--words);
+  padding: 0;
+  padding-bottom: 0.5rem;
+  margin: 0;
+  font-size: 1rem;
+}
+
+form input, form #submit {
+  font-family: "Righteous", cursive;
+  width: 100%;
+}
 /*=====================
 footer
 ======================*/
 footer {
-  padding: 1.5rem;
-  background: linear-gradient(50deg, red, blue, purple);
+  padding: 0.5rem;
+  background: linear-gradient(90deg, var(--navdark), var(--nav-fade));
   color: var(--navbar);
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: center;
+}
+footer p span {
+  font-size: 1.2rem;
 }
 
 /*=====================
