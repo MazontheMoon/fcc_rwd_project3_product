@@ -77,7 +77,7 @@ h1,
 h2,
 h4,
 figcaption {
-  font-family: "Righteous", cursive;
+  font-family: "Righteous", Georgia, cursive;
 }
 
 a,
@@ -126,12 +126,12 @@ header {
 .nav-link {
   text-decoration: none;
   padding: 2px 10px;
-  color: var(--text);
+  color: var(--words);
 }
 
-/*nav buttons on hover*/
-
-/*nav buttons on select*/
+.nav-link:focus, .nav-link:hover, .nav-link:active {
+  text-shadow: 2px 2px 2px var(--wordsRev); 
+}
 
 /*slide in to position header text then color fade and brighten animation*/
 h1 {
@@ -200,6 +200,7 @@ section {
   border: 0.5rem solid var(--sec2-side);
   margin: 1rem;
   padding: 0;
+  height: 350px;
 }
 
 #why-block .sec-blk:first-child {
@@ -346,19 +347,26 @@ Contact form
   align-items: center;
 }
 
-form {
+#how-block h2 a {
+  color: var(--words);
+}
+
+#form {
   border: var(--sec3-side) 1rem solid;
   padding: 1rem;
   margin: 1rem;
 }
 
-form * {
+#form * {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   text-align: center;
 }
 
-form p {
+#form .formbox {
+  margin: 5px;
+}
+#form p {
   color: var(--words);
   padding: 0;
   padding-bottom: 0.5rem;
@@ -366,9 +374,19 @@ form p {
   font-size: 1rem;
 }
 
-form input, form #submit {
+#form input, #form #submit {
   font-family: "Righteous", cursive;
   width: 100%;
+}
+
+#form input:hover,
+#form input:active {
+  box-shadow: 1px 1px 1px var(--sec3-side);
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--sec3-side);
 }
 /*=====================
 footer
@@ -381,8 +399,17 @@ footer {
   line-height: 1rem;
   text-align: center;
 }
+
 footer p span {
   font-size: 1.2rem;
+}
+
+footer p a {
+  color: var(--words);
+}
+
+footer p a:focus, footer p a:hover, footer p a:active {
+  text-shadow: 2px 2px 2px var(--wordsRev); 
 }
 
 /*=====================
