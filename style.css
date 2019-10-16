@@ -2,11 +2,10 @@
 Declare variables for page
 =========================*/
 :root {
-
   /*backgrounds, boxes and borders, oh my*/
   --navbar: #f5f5f5; /*offwhite*/
   --navdark: #4527a0; /*purple*/
-  --nav-fade: #AB47BC; /*violet*/
+  --nav-fade: #ab47bc; /*violet*/
   --h1-sec1: #f44336; /*red*/
   --h1-sec2: #ffeb3b; /*yellow*/
   --h1-sec3: #2196f3; /*blue*/
@@ -129,8 +128,10 @@ header {
   color: var(--words);
 }
 
-.nav-link:focus, .nav-link:hover, .nav-link:active {
-  text-shadow: 2px 2px 2px var(--wordsRev); 
+.nav-link:focus,
+.nav-link:hover,
+.nav-link:active {
+  text-shadow: 2px 2px 2px var(--wordsRev);
 }
 
 /*slide in to position header text then color fade and brighten animation*/
@@ -190,7 +191,7 @@ section {
   width: 25%;
   margin: 0;
   background-color: var(--sec1-side);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
@@ -213,7 +214,7 @@ section {
   margin: 0;
   padding: 1rem;
   background-color: var(--sec2-side);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
@@ -228,7 +229,7 @@ section {
 #how-block .sec-blk:first-child {
   width: 25%;
   background-color: var(--sec3-side);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
@@ -240,7 +241,7 @@ Product listing grid
 #product-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template rows: 1fr 1fr 1fr;
+  grid-template: 1fr 1fr 1fr;
   grid-gap: 0.5rem;
   margin: 0.5rem;
 }
@@ -259,52 +260,44 @@ Product listing grid
   flex: 2;
 }
 
-.product figure figcaption, .product figure p {
+.product figure figcaption,
+.product figure p {
   flex: 1;
 }
 
-.product:nth-of-type(1)
-{
+.product:nth-of-type(1) {
   background-color: var(--smile-main);
 }
 
-.product:nth-of-type(2)
-{
+.product:nth-of-type(2) {
   background-color: var(--grin-main);
 }
 
-.product:nth-of-type(3)
-{
+.product:nth-of-type(3) {
   background-color: var(--grincry-main);
 }
 
-.product:nth-of-type(4)
-{
+.product:nth-of-type(4) {
   background-color: var(--sad-main);
 }
 
-.product:nth-of-type(5)
-{
+.product:nth-of-type(5) {
   background-color: var(--sadcry-main);
 }
 
-.product:nth-of-type(6)
-{
+.product:nth-of-type(6) {
   background-color: var(--meheyes-main);
 }
 
-.product:nth-of-type(7)
-{
+.product:nth-of-type(7) {
   background-color: var(--meh-main);
 }
 
-.product:nth-of-type(8)
-{
+.product:nth-of-type(8) {
   background-color: var(--annoyed-main);
 }
 
-.product:nth-of-type(9)
-{
+.product:nth-of-type(9) {
   background-color: var(--angry-main);
 }
 
@@ -314,21 +307,23 @@ Product listing grid
   padding: 1rem;
 }
 
-
 figcaption {
   color: var(--wordsRev);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 2rem;
 }
 
 figure p {
   color: var(--wordsRev);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
 }
 
+.product:hover {
+  opacity: 0.5;
+}
 /*=====================
 Media section - video
 ======================*/
@@ -340,7 +335,7 @@ Media section - video
 Contact form
 ======================*/
 
-#how-block .sec-blk{
+#how-block .sec-blk {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -366,15 +361,16 @@ Contact form
 #form .formbox {
   margin: 5px;
 }
+
 #form p {
   color: var(--words);
   padding: 0;
   padding-bottom: 0.5rem;
   margin: 0;
-  font-size: 1rem;
 }
 
-#form input, #form #submit {
+#form input,
+#form #submit {
   font-family: "Righteous", cursive;
   width: 100%;
 }
@@ -388,9 +384,11 @@ Contact form
 .button:active {
   background-color: var(--sec3-side);
 }
+
 /*=====================
 footer
 ======================*/
+
 footer {
   padding: 0.5rem;
   background: linear-gradient(90deg, var(--navdark), var(--nav-fade));
@@ -406,10 +404,13 @@ footer p span {
 
 footer p a {
   color: var(--words);
+  text-decoration: none;
 }
 
-footer p a:focus, footer p a:hover, footer p a:active {
-  text-shadow: 2px 2px 2px var(--wordsRev); 
+footer p a:focus,
+footer p a:hover,
+footer p a:active {
+  text-shadow: 2px 2px 2px var(--wordsRev);
 }
 
 /*=====================
@@ -431,12 +432,52 @@ img:after {
   content: "uh oh!";
 }
 
+/*dark as Sith vs light as Jedi mode*/
+ /*
+html{
+  background-color: white;
+}
+*/
+
 /*=============================
 Media Queries - Responsiveness
 ==============================*/
 
+@media screen and (max-width:768px) {
+  
+  /*header grid all in single column*/
+  h1 {
+    grid-template-areas:
+      "anim1 anim1 anim1"
+      "anim2 anim2 anim2"
+      "anim3 anim3 anim3"
+      "anim4 anim4 anim4";
+  }
+  
+  /*sections*/
+  main {
+    width: 95%;
+  }
+  
+  section {
+    flex-flow: column nowrap;
+  }
+  
+  #what-block .sec-blk:first-child, #why-block .sec-blk:first-child, #why-block .sec-blk:last-child, #how-block .sec-blk:first-child {
+    width: 100%;
+  }
+ 
+}
+
+/*=============================
+Media Queries - Accessibility
+==============================*/
 /*turn off animations based on browser setting*/
+
 
 /*=====================
 Media Queries - Print
 ======================*/
+@media print {
+  
+}
