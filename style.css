@@ -74,7 +74,6 @@ input {
 /*fonts*/
 h1,
 h2,
-h4,
 figcaption {
   font-family: "Righteous", Georgia, cursive;
 }
@@ -241,7 +240,7 @@ Product listing grid
 #product-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 0.5rem;
   margin: 0.5rem;
 }
@@ -463,10 +462,23 @@ Media Queries - Responsiveness
     flex-flow: column nowrap;
   }
   
+  #why-block {
+    height: auto;
+  }
+  
+  section .sec-blk {
+    padding: 0;
+    margin: 0;
+  }
+  
   #what-block .sec-blk:first-child, #why-block .sec-blk:first-child, #why-block .sec-blk:last-child, #how-block .sec-blk:first-child {
     width: 100%;
   }
  
+  /*product grid becomes product list*/
+  #product-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*=============================
