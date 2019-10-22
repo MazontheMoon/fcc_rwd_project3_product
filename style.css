@@ -540,4 +540,56 @@ Media Queries - Print
 ======================*/
 @media print {
   
+  /*Hide unwanted print elements*/
+ header, #why-block, #how-block, footer p:last-child span {
+    display: none;
+  }
+  
+  /*Global reset*/
+  main {
+    font-family: Georgia, serif;
+    font-size: 14pt;
+    line-height: 20pt;
+    background: none;
+    color: #000;
+    width: 100%;
+  }
+  
+  /*Layout reset*/
+  section {
+    flex-flow: column nowrap;
+  }
+  
+  #product-list {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  
+  /*Specifics*/
+  #what-block {
+    border: none;
+  }
+  
+  #what-block .sec-blk:first-child {
+    width: 100%;
+    color: #f00;
+  }
+  
+  .product figure, .product figure figcaption,
+.product figure p {
+  flex: 1;
+}
+  .profilepic {
+    font-size: 24pt;
+  }
+  
+  .figcaption {
+    font-size: 18pt;
+  }
+  
+  figure p
+  {
+    font-size: 16pt;
+  }
+
 }
