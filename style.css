@@ -15,6 +15,7 @@ Declare variables for page
   --sec2-side: #ffeb3b; /*yellow*/
   --sec3-side: #2196f3; /*blue*/
   --footer: #f5f5f5; /*offwhite*/
+  --page: #000; /*black*/
 
   /*emotion colours*/
   --smile-main: #ffeb3b; /*yellow*/
@@ -37,7 +38,7 @@ Basic Styles and Layout
 ======================*/
 html {
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: var(--page);
 }
 
 /*set global styles*/
@@ -150,10 +151,10 @@ h1 #header-anim1 {
   background-color: var(--h1-sec1);
   grid-area: anim1;
   -webkit-animation-name: slide;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 4s;
   -webkit-animation-timing-function: ease;
   animation-name: slide;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease;
 }
 
@@ -161,33 +162,39 @@ h1 #header-anim2 {
   background-color: var(--h1-sec2);
   grid-area: anim2;
   -webkit-animation-name: slide;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 4s;
   -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: ease;
   animation-name: slide;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-delay: 1s;
+  animation-timing-function: ease;
 }
 
 h1 #header-anim3 {
   background-color: var(--h1-sec3);
   grid-area: anim3;
   -webkit-animation-name: slide;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 4s;
   -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: ease;
   animation-name: slide;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-delay: 2s;
+  animation-timing-function: ease;
 }
 
 h1 #header-anim4 {
   background-color: var(--h1-sec4);
   grid-area: anim4;
   -webkit-animation-name: slide;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 4s;
   -webkit-animation-delay: 3s;
+  -webkit-animation-timing-function: ease;
   animation-name: slide;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-delay: 3s;
+  animation-timing-function: ease;
 }
 
 @keyframes slide {
@@ -205,10 +212,12 @@ h1 #header-anim4 {
   75% {
     opacity: 0.75;
   }
+  
   to {
     opacity: 1;
   }
 }
+
 /*=====================
 Section styling
 ======================*/
@@ -474,13 +483,6 @@ img:after {
   content: "uh oh!";
 }
 
-/*dark as Sith vs light as Jedi mode*/
- /*
-html{
-  background-color: white;
-}
-*/
-
 /*=============================
 Media Queries - Responsiveness
 ==============================*/
@@ -572,10 +574,15 @@ Media Queries - Responsiveness
 
 }
 /*=============================
-Media Queries - Accessibility
+Accessibility
 ==============================*/
-/*turn off animations based on browser setting*/
 
+/*turn off animations based on browser setting*/
+@media (prefers-reduced-motion: reduce) {
+  h1 * {
+    animation: none;
+  }
+}
 
 /*=====================
 Media Queries - Print
