@@ -15,6 +15,7 @@ Declare variables for page
   --sec2-side: #ffeb3b; /*yellow*/
   --sec3-side: #2196f3; /*blue*/
   --footer: #f5f5f5; /*offwhite*/
+  --page: #000; /*black*/
 
   /*emotion colours*/
   --smile-main: #ffeb3b; /*yellow*/
@@ -37,7 +38,7 @@ Basic Styles and Layout
 ======================*/
 html {
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: var(--page);
 }
 
 /*set global styles*/
@@ -216,6 +217,7 @@ h1 #header-anim4 {
     opacity: 1;
   }
 }
+
 /*=====================
 Section styling
 ======================*/
@@ -480,13 +482,6 @@ img:after {
   font-size: 0.8em;
   content: "uh oh!";
 }
-
-/*dark as Sith vs light as Jedi mode*/
- /*
-html{
-  background-color: white;
-}
-*/
 
 /*=============================
 Media Queries - Responsiveness
